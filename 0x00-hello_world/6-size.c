@@ -1,22 +1,24 @@
 #include <stdio.h>
 /**
- * main-prints standard variable size to stdout
- * description:uses sizeof to determine variable size
- * Return:void
-**/
+ *main - prints the size of several data types
+ *
+ *Description: The function will print the size of char, int, long int
+ *long long int, and float data types.
+ *Return: 0 if the function went through to completion successfully
+ */
 int main(void)
 {
-char charType;
-int intType;
-long int longintType;
-long long int longlongintType;
-float floatType;
+char c;
+int i;
+long int li;
+long long int lli;
+float f;
 
-printf("Size of a char: %zu byte(s)\n", sizeof(charType));
-printf("Size of a int: %zu byte(s)\n", sizeof(intType));
-printf("Size of a long int: %zu byte(s)\n", sizeof(longintType));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(longlongintType));
-printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
+ printf("Size of a char: %lu byte(s)\n", (long int) sizeof(c));
+ printf("Size of a int: %lu byte(s)\n", (long int) sizeof(i));
+ printf("Size of a long int: %lu byte(s)\n", (long int) sizeof(li));
+ printf("Size of a long long int: %lu byte(s)\n", (long int) sizeof(lli));
+ printf("Size of a float: %lu byte(s)\n", (long int) sizeof(f));
 
 return (0);
 }
