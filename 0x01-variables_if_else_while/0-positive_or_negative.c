@@ -4,10 +4,10 @@
 /**
 *main - where execution starts
 *
-*Description: The program will assign a random number to a variable*
+*Description: The program will assign a random number to a variable
 *output should be either positive, negative, or zero
 *Return: 0 if successful
-**/
+*/
 int main(void)
 {
 int n;
