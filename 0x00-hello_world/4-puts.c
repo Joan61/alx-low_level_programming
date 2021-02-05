@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* puts is more secure and less expensive  */
+**
+* main-prints standard variable size to stdout
+* description:uses sizeof to determine variable size
+* Return:void
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");

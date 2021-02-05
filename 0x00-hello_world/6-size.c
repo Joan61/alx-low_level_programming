@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+**
+* main-prints standard variable size to stdout
+* description:uses sizeof to determine variable size
+* Return:void
+*/
 int main(void)
 {
 char charType;

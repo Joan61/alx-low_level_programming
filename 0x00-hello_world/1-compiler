@@ -1,2 +1,7 @@
 #!/bin/bash
 gcc -S $CFILE -o main.o
+**
+* main-prints standard variable size to stdout
+* description:uses sizeof to determine variable size 
+* Return:void
+*/
