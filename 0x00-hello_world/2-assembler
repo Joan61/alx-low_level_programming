@@ -1,7 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o $CFILE.s
-**
-* main-prints standard variable size to stdout
-* description:uses sizeof to determine variable size
-* Return:void
-*/
+gcc $CFILE -o $CFILE.s
