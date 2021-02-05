@@ -19,6 +19,5 @@ float f;
  printf("Size of a long int: %lu byte(s)\n", (long int) sizeof(li));
  printf("Size of a long long int: %lu byte(s)\n", (long int) sizeof(lli));
  printf("Size of a float: %lu byte(s)\n", (long int) sizeof(f));
-
 return (0);
 }
