@@ -1,9 +1,8 @@
 #include <stdio.h>
-**
-* main-prints standard variable size to stdout
-* description:uses sizeof to determine variable size
-* Return:void
-*/
+/**
+ *main-where execution is started
+ *Return: ends execution of a function
+ **/
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
