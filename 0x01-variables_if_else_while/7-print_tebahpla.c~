@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+*main - where execution starts
+*Description:  The program will print all the alphabets
+*a-z in lowercase in reverse
+*Return: 0 if successful.
+**/
+int main(void)
+{
+char ch = 'z';
+
+while (ch <= 'a')
+{
+putchar(ch);
+ch--;
+}
+putchar('\n');
+return (0);
+}
