@@ -8,17 +8,17 @@
 **/
 int main(void)
 {
-char  ch  = 'a';
-while (ch <= 'z')
+char  letter  = 'a';
+while (letter <= 'z')
 {
-putchar(ch);
-ch++;
+putchar(letter);
+letter++;
 }
-char letter = 'A';
+letter = 'A';
 while (letter <= 'Z')
 {
-putchar(ch);
-ch++;
+putchar(letter);
+letter++;
 }
 putchar('\n');
 return (0);
