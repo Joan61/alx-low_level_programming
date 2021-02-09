@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*Description: print letters from a - z in lowercase
+*print_alphabet - prints the letters from a to z in lowercase
 *
-*Return: 0 if successful
-**/
+*Return: 0 upon successful completion
+*/
 void print_alphabet(void)
 {
 int letter = 'a';
@@ -14,5 +14,4 @@ _putchar(letter);
 letter++;
 }
 _putchar('\n');
-return (0);
 }
