@@ -1,0 +1,19 @@
+#include "holberton.h"
+/**
+*_puts - prints a string to a new line
+*str: string to be printed out
+*
+*Return: void
+**/
+void _puts(char *str)
+{
+char *b;
+
+b = str;
+while (*b != '\0')
+{
+_puts(char *b);
+b++;
+}
+_putchar('\n');
+}
