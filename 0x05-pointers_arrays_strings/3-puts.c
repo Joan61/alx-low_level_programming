@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 /**
 *_puts - prints a string to a new line
@@ -7,13 +8,16 @@
 **/
 void _puts(char *str)
 {
-int len_str;
+int c;
 
-len_str = 0;
-while (str[len_str] != '\0')
+c = 0;
+
+while (str[c] != '\0')
 {
-  _putchar(str[len_str]);
-len_str++;
+
+_putchar(str[c]);
+
+c++;
 }
 _putchar('\n');
 }
