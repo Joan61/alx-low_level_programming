@@ -13,7 +13,7 @@ while (*s != '\0')
 {
 strlen++;
 s++;
-    }
+}
 s--;
 
 while (strlen != 0)
