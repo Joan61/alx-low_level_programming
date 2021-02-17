@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
 *rev_string: Function that reverses a string
