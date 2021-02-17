@@ -9,13 +9,13 @@
 void rev_string(char *s)
 {
 int index = 0;
-int revindex =0;
+int revindex = 0;
 int temp;
 char *origin = s;
 
 while(*s != '\0')
 {
-revindex ++;
+revindex++;
 s++;
 }
 revindex--;
