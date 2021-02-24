@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
-*print_array: Prints n elements of an array of
+*print_array - Prints n elements of an array of
 *integers followed by a new line
 *@a: array to be printed
 *@n: number of elements to print
@@ -13,7 +13,7 @@ int i;
 
 for (i = 0; i < n; i++)
 {
-if(i == 0)
+if (i == 0)
 printf("%d", a[i]);
 else
 printf(", %d", a[i]);
