@@ -1,33 +1,32 @@
 #include "holberton.h"
 
 /**
-*cap_string - function that will capitalize all words
-*of a string
-*@s: The string to be manipulated
-*Return: the string
+* cap_string - capitalize first letter of each word
+* @s: string to manipulate
+* Return: string
 **/
-char *cap_string(char *)
+
+char *cap_string(char *s)
 {
-char *origin = str;
-while (*str != '\0')
+int i = 0;
+
+if (s[i] >= 'a' && s[i] <= 'z')
+s[i] = s[i] - 'a' + 'A';
+i++;
+
+
+while (s[i] != '\0')
 {
-if (*str >= 'a' && *str <= 'z')
-if (*str == *origin ||
-*(str - 1) == ' ' ||
-*(str - 1) == '\t' ||
-*(str - 1) == '\n' ||
-*(str - 1) == ',' ||
-*(str - 1) == ';' ||
-*(str - 1) == '.' ||
-*(str - 1) == '!' ||
-*(str - 1) == '?' ||
-*(str - 1) == '"' ||
-*(str - 1) == '(' ||
-*(str - 1) == ')' ||
-*(str - 1) == '{' ||
-*(str - 1) == '}')
-*(str = *str - 32;
-str++;
+
+if ((s[i] >= 'a' && s[i] <= 'z')
+&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+|| s[i - 1] == '\n'))
+s[i] = s[i] - 'a' + 'A';
+i++;
 }
-return (origin);
+
+return (s);
 }
