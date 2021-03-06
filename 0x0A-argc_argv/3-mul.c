@@ -19,7 +19,7 @@ num1 = atoi(argv[1]);
 
 num2 = atoi(argv[2]);
 
-product = num1 *  num2;
+product = num1 * num2;
 
 printf("%d\n", product);
 }
