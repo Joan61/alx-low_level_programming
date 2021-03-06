@@ -1,50 +1,48 @@
 #include "holberton.h"
 /**
-*is_palindrome - analyzes if a string is a palindrome
-*@s: string to be analyzed
-*
-*Return: 1 if palindrome, 0 otherwise
+*_length - finds length of string
+*@s: string to be checked
+*Return: int
+**/
+int _length(char *s)
+{
+if (s[0])
+return (1 + _length(s + 1));
+else
+return (0);
+}
+
+/**
+*palindrome_checker - checks if a string is a palindrome
+*@s: string to check
+*@l: length of string
+*Return: int
+**/
+int palindrome_checker(char *s, int l)
+{
+if (l <= 1)
+return (1);
+
+else if (s[0] == s[l - 1])
+
+{
+return (palindrome_checker(s + 1, l - 2));
+}
+return (0);
+}
+/**
+*is_palindrome - checks for palindrome
+*@s: string to check
+*Return: int
 **/
 int is_palindrome(char *s)
 {
-char *start = s;
-int counter = strlength(s) - 1;
+int len;
 
-s = start;
-return (iteratepalindrome(s, start, counter));
-}
+len = _length(s);
 
-/**
-*strlength - finds string length recursively
-*@s: string to find length of
-*
-*Return: String length
-**/
-int strlength(char *s)
-{
-if (*s == '\0')
-return (0);
-s++;
-return (1 + strlength(s));
-}
-
-/**
-*iteratepalindrome - iterates over a string to check for palindrome
-*@s: string to iterate over
-*@start: keeps track of starting point of string
-*@counter: upper end counter
-*
-*Return: 1 if palindrome, 0 if not palindrome
-**/
-int iteratepalindrome(char *s, char *start, int counter)
-{
-if (counter > 0)
-{
-if (*s == *(start + counter))
-return (iteratepalindrome(s + 1, start, counter - 1));
-else
-return (0);
-}
-else
+if (len <= 1)
 return (1);
+else
+return (palindrome_checker(s, 1));
 }
