@@ -2,7 +2,7 @@
 
 /**
  *free_list - function that frees list_t
- *@head - pointer to head mode
+ *@head:  pointer to head mode
  *
  *Return: no return
  */
