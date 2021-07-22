@@ -89,3 +89,7 @@ Introduction to recursion. Concepts include;
 
 
 ### 0x09. C - Static libraries
+
+Learning about Static Libraries, how to create and use them.
+
+https://alx-intranet.hbtn.io/concepts/61
